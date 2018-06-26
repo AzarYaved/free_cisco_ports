@@ -1,7 +1,9 @@
 script searches for free ports on cisco switches
 --------------------------------------------------------------------------------
-running the script
+running the script:
 python3.6 free_cisco_ports.py 10.129.50.110 10.129.50.111 10.129.50.112 -e /home/test/script_output
+
+-e <path> export csv-file with results in this folder
 ---------------------------------------------------------------------------------
 
 Script output example:
