@@ -1,0 +1,58 @@
+script searches for free ports on cisco switches
+--------------------------------------------------------------------------------
+running the script
+python3.6 free_cisco_ports.py 10.129.50.110 10.129.50.111 10.129.50.112 -e /home/test/script_output
+---------------------------------------------------------------------------------
+
+Script output example:
+================================================================================
+Устройство с ip-адресом 10.129.50.112 отвечает на icmp-запросы - OK
+Устройство с ip-адресом 10.129.50.110 отвечает на icmp-запросы - OK
+Устройство с ip-адресом 10.129.50.111 отвечает на icmp-запросы - OK
+--------------------------------------------------------------------------------
+Введите данные для авторизации на устройствах 
+
+Username: prime
+Password: 
+
+Собираю данные с устройства 10.129.50.110
+# # # 
+Собираю данные с устройства 10.129.50.111
+# # # # # # # # # 
+Собираю данные с устройства 10.129.50.112
+# # # # # 
+
+
+Switch 10.129.50.110 uptime - 12 weeks, 22 hours, 23 minutes
+System returned to ROM by power-on
+
+Switch 10.129.50.111 uptime - 3 days, 1 hour, 58 minutes
+System returned to ROM by power-on
+
+Switch 10.129.50.112 uptime - 6 weeks, 5 days, 3 hours, 35 minutes
+System returned to ROM by power-on
+
+|    Switch     |  Port  |  Last input  |  Last output  |     Port type     |
+|:-------------:|:------:|:------------:|:-------------:|:-----------------:|
+| 10.129.50.110 | Gi0/8  |    never     |     6w4d      | 10/100/1000BaseTX |
+| 10.129.50.110 | Gi0/10 |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.110 | Gi0/12 |    never     |     never     |    Not Present    |
+| 10.129.50.111 | Gi0/3  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/4  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/5  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/6  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/7  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/8  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/9  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/10 |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.111 | Gi0/12 |    never     |     never     |    Not Present    |
+| 10.129.50.112 | Gi0/7  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.112 | Gi0/8  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.112 | Gi0/9  |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.112 | Gi0/10 |    never     |     never     | 10/100/1000BaseTX |
+| 10.129.50.112 | Gi0/12 |    never     |     never     |    Not Present    |
+
+ Файл 26-06-2018-13:17_notconnect_ports_['10.129.50.110', '10.129.50.111', '10.129.50.112'].csv создан в каталоге /home/test/script_output
+
+ Работа скрипта завершена
+================================================================================
